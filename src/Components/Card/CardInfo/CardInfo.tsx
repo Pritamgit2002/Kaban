@@ -28,13 +28,13 @@ function CardInfo(props: CardInfoProps) {
     setCardValues({ ...cardValues, desc: value });
   };
 
-  const calculatePercent = () => {
-    if (!cardValues.tasks?.length) return 0;
-    const completed = cardValues.tasks?.filter(
-      (item) => item.completed
-    )?.length;
-    return (completed / cardValues.tasks?.length) * 100;
-  };
+  // const calculatePercent = () => {
+  //   if (!cardValues.tasks?.length) return 0;
+  //   const completed = cardValues.tasks?.filter(
+  //     (item) => item.completed
+  //   )?.length;
+  //   return (completed / cardValues.tasks?.length) * 100;
+  // };
 
   const updateDate = (date: string) => {
     if (!date) return;
@@ -50,7 +50,7 @@ function CardInfo(props: CardInfoProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cardValues]);
 
-  const calculatedPercent = calculatePercent();
+  // const calculatedPercent = calculatePercent();
 
   return (
     <Modal onClose={onClose}>

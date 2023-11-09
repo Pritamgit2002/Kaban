@@ -55,9 +55,9 @@ function Dashboard() {
     tempBoardsList[boardIndex].cards.push({
       id: Date.now() + Math.random() * 2,
       title,
-      labels: [],
+      // labels: [],
       date: "",
-      tasks: [],
+      // tasks: [],
       desc: "",
     });
     setBoards(tempBoardsList);
