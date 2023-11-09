@@ -2,4 +2,4 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-### Build on Next js & Tailwind css
+# Build on Next js & Tailwind css
