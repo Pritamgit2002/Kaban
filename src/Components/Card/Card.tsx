@@ -18,7 +18,7 @@ interface CardProps {
 function Card(props: CardProps) {
   const { card, boardId, removeCard, onDragEnd, onDragEnter, updateCard } =
     props;
-  const { id, title, desc, date, tasks, labels } = card;
+  const { id, title, desc, date } = card;
   const [showDropdown, setShowDropdown] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
@@ -57,12 +57,6 @@ function Card(props: CardProps) {
             <p className="rounded-full p-4 px-12 bg-gray-200 text-black w-fit-content text-[14px] leading-[21px] flex gap-5 items-center">
               <Clock className="card-footer-icon" />
               {formatDate(date)}
-            </p>
-          )}
-          {tasks && tasks?.length > 0 && (
-            <p className="card-footer-item">
-              <CheckSquare className="h-[13px] w-[13px]" />
-              {tasks?.filter((item) => item.completed)?.length}/{tasks?.length}
             </p>
           )}
         </div>
