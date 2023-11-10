@@ -8,3 +8,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 https://github.com/Pritamgit2002/Kaban/assets/102732012/31b5206a-9450-40ea-bbd2-0891fd750893
 
+
+## 1. First 3 board previously set as Todo, Progess, Done
+## 2. Set title, description , date(from calendar) in modal for each task.
