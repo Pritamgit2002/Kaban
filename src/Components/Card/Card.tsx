@@ -4,7 +4,7 @@ import { formatDate } from "../../Helper/Util";
 import { ICard } from "../../Interfaces/Kanban";
 import Chip from "../Common/Chip";
 import Dropdown from "../Dropdown/Dropdown";
-import {BsTrash} from "react-icons/bs"
+import { BsTrash } from "react-icons/bs";
 
 import CardInfo from "./CardInfo/CardInfo";
 interface CardProps {
@@ -40,13 +40,15 @@ function Card(props: CardProps) {
         onDragEnter={() => onDragEnter(boardId, id)}
         onClick={() => setShowModal(true)}
       >
-        <div className="flex items-center c gap-40">
-
-        <div className="flex font-bold text-2xl leading-[1.875rem] ">{title}</div>
-        <p onClick={() => removeCard(boardId, id)}
-        className="text-2xl"
-        ><BsTrash/></p>
+        <div className="flex items-center justify-between  ">
+          <div className="flex font-bold text-4xl leading-[1.875rem] ">
+            {title}
+          </div>
+          <p onClick={() => removeCard(boardId, id)} className="text-2xl  hover:scale-110 duration-200 ease-in-out">
+            <BsTrash />
+          </p>
         </div>
+
         <div>
           <p title={desc}>
             <AlignLeft />
@@ -54,8 +56,8 @@ function Card(props: CardProps) {
         </div>
         <div className="flex justify-between items-center">
           {date && (
-            <p className="rounded-full p-4 px-12 bg-gray-200 text-black w-fit-content text-[14px] leading-[21px] flex gap-5 items-center">
-              <Clock className="card-footer-icon" />
+            <p className="rounded-full p-4 bg-gray-200 text-black w-fit-content text-[18px] leading-[21px] flex gap-3 items-center">
+              <Clock className="scale-90" />
               {formatDate(date)}
             </p>
           )}

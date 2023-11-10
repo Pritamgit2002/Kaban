@@ -141,7 +141,7 @@ function Dashboard() {
     updateLocalStorageBoards(boards);
   }, [boards]);
   return (
-    <div className="flex flex-col items-center justify-center h-max bg-green-600">
+    <div className="flex flex-col items-center justify-center h-max ">
       <div className="flex-1 w-full overflow-x-auto overflow-y-auto h-full pt-20">
         <div className="app-boards">
           {boards.map((item) => (

@@ -9,7 +9,7 @@ function Modal(props: any) {
       onClick={() => (props.onClose ? props.onClose() : "")}
     >
       <div
-        className="overflow-y-auto max-h-[95vh] bg-white  shadow-md"
+        className="overflow-y-auto max-h-[95vh] bg-white rounded-xl  shadow-md"
         onClick={(event) => event.stopPropagation()}
       >
         {props.children}

@@ -1,8 +1,8 @@
-import { ApiMockResponse } from "../app/ApiMockData/dummyData";
-import { IBoard } from "../Interfaces/Kanban";
+ import { ApiMockResponse } from "../app/ApiMockData/dummyData";
+ import { IBoard } from "../Interfaces/Kanban";
 
-const LocalStorageKeyName = "kanban-boards";
-//Data Layer
+ const LocalStorageKeyName = "kanban-boards";
+// //Data Layer
 export class BoardAPI {
   async fetchBoardList(): Promise<IBoard[]> {
     const apiData: IBoard[] = ApiMockResponse;

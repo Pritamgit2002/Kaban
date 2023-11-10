@@ -57,10 +57,12 @@ function CustomInput(props: CustomInputProps) {
           
 
 
-          <div className="custom-input-edit-footer">
-            <button type="submit" className="p-5">{buttonText || "Add"}</button>
-            <X onClick={() => setIsCustomInput(false)} className="closeIcon" />
+          <div className="custom-input-edit-footer flex items-center bg--600 justify-between ">
+            <button type="submit" className="p-2">{buttonText || "Add"}</button>
+
+            <X onClick={() => setIsCustomInput(false)} className=" cursor-pointer h-[35px] w-[35px] p-1 rounded-full hover:bg-gray-300" />
           </div>
+
         </form>
       ) : (
         <p

@@ -5,6 +5,7 @@ import { MoreHorizontal } from "react-feather";
 import Card from "../Card/Card";
 import Dropdown from "../Dropdown/Dropdown";
 import CustomInput from "../CustomInput/CustomInput";
+import {BsTrash} from "react-icons/bs"
 
 import "./Board.css";
 import { IBoard, ICard } from "../../Interfaces/Kanban";
@@ -36,8 +37,8 @@ function Board(props: BoardProps) {
 
       <div className="bg-[rgba(223,227,230,0.55)] p-3 rounded-3" key={board?.id}>
 
-        <div className="board-header flex items-center justify-between pb-3">
-          <p className="board-header-title font-bold flex items-center gap-[5px] text-[1rem] ">
+        <div className="board-header flex items-center justify-between p-3">
+          <p className="board-header-title font-bold flex items-center gap-[5px] text-[1.8rem] ">
 
             {board?.title}
 
@@ -46,19 +47,10 @@ function Board(props: BoardProps) {
           </p>
           <div
             className="cursor-pointer relative"
-            onClick={() => setShowDropdown(true)}
           >
-            <MoreHorizontal />
-            {showDropdown && (
-              <Dropdown
-                className="border-b border-[#f88f8f8] cursor-pointer rounded-lg"
-                onClose={() => setShowDropdown(false)}
-              >
                 <p onClick={() => removeBoard(board?.id)}
-                className="px-8 py-2 text-xl"
-                >Delete</p>
-              </Dropdown>
-            )}
+                className=" text-2xl hover:scale-110 duration-200 ease-in"
+                ><BsTrash/></p>
           </div>
         </div>
         <div className="bg-gray-200 p-2 rounded-lg flex flex-col gap-2 overflow-y-auto custom-scroll">

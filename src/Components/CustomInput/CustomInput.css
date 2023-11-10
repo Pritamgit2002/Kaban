@@ -1,17 +1,18 @@
 .custom-input {
   width: 100%;
-  border: 0.5px solid #000;
-  border-radius: 10px;
+  /* border: 0.5px solid #000;
+  border-radius: 10px; */
 }
 
 .custom-input-display {
   padding: 6px 12px;
   border-radius: 3px;
-  background-color: #eee;
+  background-color: #d2cfcfdc;
   color: #000;
   cursor: pointer;
-  width: fit-content;
+  width: full;
   transition: 200ms;
+  letter-spacing: 2px;
 }
 
 .custom-input-display:hover {
@@ -32,12 +33,6 @@
   padding: 10px;
 }
 
-.custom-input-edit-footer {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
 .custom-input-edit-footer button {
   cursor: pointer;
   border-radius: 5px;
@@ -47,6 +42,8 @@
   border: none;
   transition: 100ms ease;
   padding: 10px;
+  width: 155px;
+  white-space: nowrap;
 }
 .custom-input-edit-footer button:hover {
   background-color: #046daa;
@@ -56,8 +53,8 @@
   transform: translateY(2px);
 }
 
-.custom-input-edit-footer .closeIcon {
+/* .custom-input-edit-footer .closeIcon {
   cursor: pointer;
   height: 24px;
   width: 24px;
-}
+} */
