@@ -11,3 +11,4 @@ https://github.com/Pritamgit2002/Kaban/assets/102732012/7773a061-b67e-4e0f-9364-
 
 ## 1. First 3 column previously set as Todo, Progess, Done
 ## 2. Set title, description , date(from calendar) in modal for each task.
+## 3. Delete any particular column or task .
